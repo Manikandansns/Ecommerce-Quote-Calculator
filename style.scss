@@ -1,0 +1,207 @@
+* {
+    padding: 0%;
+    margin: 0%;
+  }
+  
+  body {
+    background-color: rgb(3, 3, 58);
+    margin: 0%;
+    padding: 3% 7%;
+  }
+  section{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container1{
+      
+    h1{ 
+        margin-top: 20px;
+        font-size: xx-large;
+        font-weight: 700; 
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #ffff;
+    }
+    .cta-text1{
+        color: grey;
+    }
+    h3{
+        margin-top: 20px;
+        color:purple;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 700;
+    }
+    #cta-input1{
+        width: 400px;
+        margin-top: 20px;
+        border-radius: 8px;
+        height: 30px;
+        background: rgb(37,41,71);
+        background: linear-gradient(180deg, rgba(37,41,71,1) 0%, rgba(37,41,71,1) 100%);
+        border: 1px solid grey;
+        color: #ffff;
+        font-size: larger;
+        font-weight: 400;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 10px;
+    }
+    .cta-input-Gig{
+        display: flex;
+        color: grey;
+        
+        input{
+            margin: 10px;
+        }
+        p{
+            margin: 10px;
+        }
+    }
+    .cta-input-Services{
+        display: flex;
+        color: grey;
+        
+        input{
+            margin: 10px;
+        }
+        p{
+            margin: 10px;
+        }
+    }
+    h3{
+        margin-top: 30px;
+
+    }
+    .cta-input-range{
+        margin-top: 20px;
+        width: 400px;
+        color: purple;
+        margin-bottom: 20px;
+    }
+    .cta-text-output{
+        color: grey;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: large;
+        font-weight: 400;
+    }
+  }
+  .container2{
+     padding: 3% 4%;
+     
+
+     .box{
+        text-align: center;
+        width: 500px;
+        height: 260px;
+        background: rgb(37,41,71);
+        background: linear-gradient(180deg, rgba(37,41,71,1) 0%, rgba(37,41,71,1) 100%);
+
+        hr{
+            margin-top: 10%;
+            color: purple;
+        }
+        .cta-text{
+            padding-top: 10%;
+            color: #ffff;
+            font-size: larger;
+            font-weight: 400;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h1{
+            color: purple;
+            margin-top: 20px;
+            font-size: xx-large;
+            font-weight: 600;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    }
+    
+  }
+  .box-wrap{
+       
+    display: flex;
+    background: rgb(37,41,71);
+    background: linear-gradient(180deg, rgba(37,41,71,1) 0%, rgba(37,41,71,1) 100%);
+    margin-bottom: 30px;
+  }
+  .con1{
+    margin-top: 20px;
+    margin-left: 20%;
+    color: purple;
+    font-size: medium;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    p{
+        color: #ffff;
+        margin-top: 10px;
+    }
+}
+  .con2{
+    margin-top: 20px;
+    margin-left: 20%;
+    color: purple;
+    font-size: medium;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    p{
+        color: #ffff;
+        margin-top: 10px;
+    }
+    hr{
+        border: 1px solid purple;
+    }
+}
+#btn1{
+    margin-top: 20px;
+    height: 50px;
+    width: 150px;
+    color: #ffff;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    background: rgb(37,41,71);
+    background: linear-gradient(180deg, rgba(37,41,71,1) 0%, rgba(37,41,71,1) 100%);
+}
+#btn2{
+    color: #ffff;
+    height: 50px;
+    width: 150px;
+    background-color: green;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+}
+.cta-text-last{
+    margin-top: 30px;
+    color: grey;
+    font-size: small;
+    font-weight: 100;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#value{
+    color: grey;
+}
+#amount{
+    margin: 30px;
+    color: purple;
+    font-size: larger;
+    font-weight: 300;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.amt{
+    margin-top: 30px;
+    color: purple;
+    font-size: larger;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.years{
+    color: grey;
+    font-size: large;
+    font-weight: 200;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media  (max-width: 1092px){
+    .container1{
+        width: 100%;
+    }
+
+}

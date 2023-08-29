@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="container1">
+            <h1>Estimated your project Quote.</h1>
+            <br>
+            <p class="cta-text1">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Delectus voluptatem consequatur ad libero vel. Est, atque cupiditate?</p>
+            <h3>Email Id *</h3>
+            <input id="cta-input1" type="email" >
+            <h3>Required Gig *</h3>
+            <div class="cta-input-Gig">
+                <p><input type="radio" id="radio1" name="radio" value="1999"  onclick="calculateAmount()">Branding</p>
+                <p><input type="radio" id="radio2" name="radio" value="2999"  onclick="calculateAmount()">Web Dvelpment</p>
+                <p><input type="radio" id="radio3" name="radio" value="3999"  onclick="calculateAmount()">UI design</p>
+            </div>
+                <h3>Required Services </h3>
+                <div class="cta-input-Services">
+                    <p><input type="checkbox" name="checkbox" value="200"  onclick="calculateAmount()">Marketing </p>
+                    <p><input type="checkbox" id="checkbox2"name="checkbox" value="300"  onclick="calculateAmount()">Generic Website</p>
+                    <p><input type="checkbox" name="checkbox" value="400"  onclick="calculateAmount()">Online Store</p>
+                </div>
+            <h3>Payment Milestone</h3>
+            <input class="cta-input-range" id="range" type="range" min="1" max="4"  step="1" value="0" onchange="calculateAmount()">
+                <p class="years">Year:<span id="year">0</span></p>
+        </div>
+        <div class="container2">
+         <div class="box">
+            <h3 class="cta-text">Esitimated Quote</h3>
+            <P class="amt">$<span id="amount">0</span>/-</P>
+            <hr>
+         <div class="box-wrap">
+            <div class="con1">
+                <h4> Base Price</h4>
+                <P class="base-amt">$<span id="baseamt">0</span>/-</P>
+            </div>
+            <div class="con2">
+                <h4>Initial Deposit</h4>
+                <P class="int-amt">$<span id="intamt">0</span>/-</P>
+            </div>
+         </div>
+         </div>
+         <div class="cta-buttons">
+            <button id="btn1">Go back </button>
+            <button id="btn2" onclick="calculateAmount('display()')"> Get Started</button>
+         </div>
+         <p class="cta-text-last">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        
+    </section>
+    <script>
+
+        function calculateAmount() {
+            var total = 0;
+
+            // Add amount for selected radio button
+            var radios = document.getElementsByName('radio');
+            for (var i = 0; i < radios.length; i++) {
+              if (radios[i].checked) {
+                total += parseFloat(radios[i].value);
+                break;
+              }
+            }
+            
+            // Add amount for selected checkboxes
+            var checkboxes = document.getElementsByName('checkbox');
+            for (var i = 0; i < checkboxes.length; i++) {
+              if (checkboxes[i].checked) {
+                total += parseFloat(checkboxes[i].value);
+              }
+            }
+            
+            // Add amount for selected range value
+            var range = document.getElementById('range');
+            console.log(range.value);
+            var years = document.getElementById('year');
+            years.innerText = range.value;
+            var number = 500;
+            total +=  parseFloat(range.value* number);
+            
+            //Baseamount of the element is same as the total amount
+
+            var baseamount =document.getElementById('baseamt');
+            baseamount.innerHTML = total.toFixed(2);
+
+            //initial amount is updated 
+            var initialAmount = document.getElementById("intamt");
+            var initialAmountSpan = total/4;
+            initialAmount.innerHTML = initialAmountSpan;
+
+            // Update total amount in the span element
+            var amountSpan = document.getElementById('amount');
+            amountSpan.innerHTML = total.toFixed(2);
+            
+            var display = ()=> {
+            console.log("test");
+                alert("Successfully Uploaded!"+"The price is");
+            }
+            
+        
+          }
+       
+
+    </script>
+</body>
+</html>
